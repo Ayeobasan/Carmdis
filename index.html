@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <title>Carmdis</title>
+  </head>
+  <body>
+    <section>
+      <div class="left">
+        <h1>carmdis</h1>
+      </div>
+      <div class="right">
+        <div class="hi">
+          <h2>Hi,There</h2>
+        </div>
+
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btnn" onclick="signup()">
+            Sign Up
+          </button>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Log In
+          </button>
+        </div>
+
+        <!-- SIGN UP FORM START -->
+
+        <form action="/" id="signup" id="form">
+          <div class="label input-control">
+            <input
+              type="Name"
+              name="FirstName"
+              placeholder="First Name"
+              id="Frist"
+              required
+            />
+            <input
+              type="Name"
+              name="LastName"
+              placeholder="Last Name"
+              class="in"
+              id="Last"
+              required
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label>Email</label>
+            <input
+              name="email"
+              type="email"
+              placeholder="example@gmail.com"
+              required
+              id="email"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label>Password</label>
+            <input
+              name="Password"
+              type="password"
+              placeholder="Min 8 character"
+              value=""
+              required
+              id="password"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="input-control">
+            <label>Confirm Password</label>
+            <input
+              name="Confirm-Password"
+              type="Password"
+              placeholder="Min 8 character"
+              value=""
+              id="password2"
+              required
+            />
+            <div class="error"></div>
+          </div>
+
+          <div class="all">
+            <a href="/Login.html">Already have an acoount ?</a>
+            <a href="/forgot-password">Agree with Terms And Condition</a>
+          </div>
+
+          <button name="login" type="submit" class="sign">
+            <span>Sign up</span>
+          </button>
+
+          <div class="social-icons">
+            <img src="./Image/Icons/facebook.png" />
+            <img src="./Image/Icons/download.png" />
+            <img src="./Image/Icons/gp.png" />
+          </div>
+        </form>
+
+        <!-- SIGN UP FORM END -->
+
+        <!-- LOGIN FORM START -->
+        <form action="/" id="login">
+          <div>
+            <label>Email</label>
+            <input name="email" type="email" placeholder="example@gmail.com" />
+          </div>
+          <div>
+            <label>Password</label>
+            <input
+              name="Password"
+              type="password"
+              placeholder="Min 8 character"
+              required
+            />
+          </div>
+
+          <div class="all">
+            <a href="/Already-have-an-acoount">Remember me</a>
+            <a href="/forgot-password">Forgot password?</a>
+          </div>
+          <a href="https://www.carmedis.com/">
+            <button name="login" type="submit" class="sign">Log In</button>
+          </a>
+          <div class="social-icons">
+            <img src="./Image/Icons/facebook.png" />
+            <img src="./Image/Icons/download.png" />
+            <img src="./Image/Icons/gp.png" />
+          </div>
+        </form>
+
+        <!-- LOGIN FORM END -->
+      </div>
+    </section>
+
+    <script>
+      var x = document.getElementById("signup");
+
+      var y = document.getElementById("login");
+      var z = document.getElementById("btn");
+
+      function login() {
+        x.style.display = "none";
+        y.style.display = "block";
+        y.style.transform = "1s";
+        z.style.left = "400px";
+        z.style.color = "white";
+      }
+      function signup() {
+        x.style.display = "block";
+        y.style.display = "none";
+        y.style.transform = "1s";
+        z.style.left = "0 ";
+        z.style.color = "white";
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

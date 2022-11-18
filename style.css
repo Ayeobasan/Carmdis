@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+section {
+  display: flex;
+}
+.left {
+  background-image: url(./Image/Icons/form-background.png);
+  object-fit: contain;
+  width: 50%;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.left h1 {
+  color: white;
+  font-size: 100px;
+}
+.right {
+  flex-direction: column;
+  margin: auto;
+  width: 40%;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+.hi {
+  color: blue;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+}
+form {
+  margin: 0px 20px;
+}
+.all a {
+  list-style: none;
+  text-decoration: none;
+}
+.all {
+  font-size: 12px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.sign {
+  background-color: blue;
+  border: none;
+  height: 49px;
+  margin: 0px 20px;
+  width: 80%;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 20px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  min-width: 90%;
+  height: 30px;
+  padding: 8px;
+  margin: 10px auto;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: #ebf3fc;
+}
+.input-control.success input{
+  border-color: blue;
+}
+.input-control.error input{
+  border-color: red;
+}
+.input-control .error{
+  color: red;
+  font-size: 9px;
+  height: 13px;
+}
+label {
+  color: rgb(185, 188, 210);
+  font-size: 15px;
+}
+.label {
+  display: flex;
+  width: 45%;
+}
+.label .in {
+  margin-left: 20px;
+}
+
+.button-box {
+  justify-content: space-between;
+  display: flex;
+  width: 60%;
+  margin: 20px auto;
+  position: relative;
+  border: 2px solid blue;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+.toggle-btnn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  right: 110px;
+}
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(to right, blue, blue);
+  border-radius: 30px;
+  transform: 0.5s;
+  position: sticky;
+}
+.social-icons {
+  padding: 0px 20px;
+  margin: 30px auto;
+  text-align: center;
+}
+.social-icons img {
+  width: 30px;
+  justify-content: space-between;
+}
+#login {
+  display: none;
+  transition: 0.8s;
+}
+.logall{
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+
+}
+#click{
+  background-color: white;
+  color: blue;
+}
+.login{
+  background-color: blue;
+  border: 1px solid rgb(255, 255, 255);
+  min-width:40%;
+  padding: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+#signup {
+  transition: 0.8s;
+}
+@media (max-width: 1125px) {
+  .button-box {
+    width: 70%;
+  }
+}
+@media (max-width: 1090px) {
+  .button-box {
+    width: 80%;
+  }
+  .all a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 953px) {
+  .button-box {
+    width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  .left {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .button-box {
+    width: 60%;
+  }
+  .right {
+    flex-direction: column;
+    margin: auto;
+    width: 63%;
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+  }
+}
+@media (max-width: 810px) {
+  .button-box {
+    width: 70%;
+  }
+  .left {
+    display: none;
+  }
+}
+@media (max-width: 710px) {
+  .right {
+    width: 80%;
+  }
+  .button-box {
+    width: 60%;
+  }
+  .sign {
+    background-color: blue;
+    border: none;
+    height: 40px;
+    margin: 0px 20px;
+    width: 80%;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 600;
+    outline: none;
+  }
+  .hi {
+    display: block;
+    color: blue;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 650px) {
+  .button-box {
+    width: 60%;
+  }
+}
+@media (max-width: 635px) {
+  .button-box {
+    width: 60%;
+  }
+  .toggle-btnn {
+    font-size: 8px;
+  }
+  .toggle-btn {
+    font-size: 8px;
+  }
+  label {
+    font-size: 13px;
+  }
+}
+@media (max-width: 565px) {
+  .toggle-btnn {
+    right: 100px;
+    padding: 0px 30px;
+  }
+  .toggle-btn {
+    padding: 5px 20px;
+    height: 30px;
+  }
+}
+@media (max-width: 518px) {
+    #btn{
+        min-width: 40px;
+      }
+  .toggle-btn {
+    width: 40%;
+    height: 30px;
+  }
+  .toggle-btnn {
+    width: 50%;
+    height: 30px;
+    right: 80px;
+  }
+}
+@media (max-width: 450px) {
+    .all a{
+        font-size: 8px;
+    }
+    .button-box{
+        width: 70%;
+    }
+    #btn{
+        min-width: 50px;
+      }
+  .toggle-btnn {
+    width: 60%;
+    height: 30px;
+    right: 70px;
+  }
+  .toggle-btn {
+    width: 50%;
+    height: 30px;
+    left: 10px;
+  }
+  input::placeholder{
+    font-size: 10px;
+  }
+}
+@media (max-width: 430px) {
+  .toggle-btnn {
+    width: 80%;
+    height: 30px;
+    right: 75px;
+  }
+  .toggle-btn {
+    width: 60%;
+    height: 30px;
+    /* left: 10px; */
+  }
+}
+@media (max-width:360px) {
+    .right{
+        width: 100%;
+    }
+    .button-box{
+        width: 80%;
+    }
+    #btn{
+        min-width: 60px;
+    }
+    .toggle-btnn {
+        width: 80%;
+        height: 30px;
+        right: 80px;
+      }
+}
+@media (max-width:280px) {
+
+    .all a{
+        font-size: 7px;
+        align-items: center;
+        text-align: center;
+    }
+    input{
+        height: 20px;
+    }
+
+}
+@media (max-width:265px) {
+    .button-box{
+        width: 90%;
+    }
+    .label {
+        display: flex;
+        width: 40%;
+    }
+
+}
+@media (max-width:260px) {
+    label{
+        font-size: 10px;
+    }
+    input{
+        height: 20px;
+    }
+    .all a{
+        font-size: 5px;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width:235px) {
+    .button-box{
+        width: 70%;
+    }
+    .toggle-btnn {
+        width: 100%;
+
+        height: 30px;
+        right: 75px;
+        font-size: 7px;
+      }
+      .toggle-btn {
+        width: 70%;
+        height: 30px;
+        left: -50px;
+        font-size: 7px;
+
+      }
+}
+@media (max-width:210px) {
+    #input{
+        width: 50%;
+    }
+}
+
+@media (max-width:185px) {
+    .toggle-btn {
+        width: 70%;
+        height: 30px;
+        left: -60px;
+        font-size: 7px;
+
+      }
+}
